@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html ng-app="assessment">
-  <head>
-    <meta charset="utf-8">
-    <title>Angular Assessment</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angular Assessment</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js">
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script type="text/javascript" src="client.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="BehindCurtain as vm">
 
-    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body ng-controller="BehindCurtain">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="page-header">
+        <h3>AngularJS  <small>Courtney Ives</small></h3>
+      </div>
+    </div>
+  </div>
 
-  </body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- :::::::::::::: MESSAGE INPUT ::::::::::::::: -->
+      <div class="col-md-6">
+        <div class="input well well-sm">
+          <h4>Enter a message</h4>
+          <input type="text" name="name" ng-model="vm.message">
+          <button type="button" name="submit" ng-click="vm.addMsg()">Submit</button>
+          <button type="button" name="clear" ng-click="vm.clear()">Clear</button>
+        </div>
+      </div><!-- ::: CLOSE INPUT ::: -->
+
+      <!-- :::::::::::::: MESSAGE LIST ::::::::::::::: -->
+      <div class="col-md-6">
+        <ol class="well well-sm" ng-show="vm.listShow">
+          <h4>Messages:</h4>
+          <li ng-repeat="item in vm.list track by $index">{{item}}</li>
+          <!-- debug: {{vm.list}} -->
+          <button type="button" name="deleteList" ng-click="vm.emptyList()">Empty</button>
+        </ol>
+      </div> <!-- ::: CLOSE LIST ::: -->
+    </div>
+  </div>
+</body>
 </html>

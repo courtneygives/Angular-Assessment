@@ -1,0 +1,24 @@
+body {
+  font-family: 'courier new', sans-serif;
+  background-color: lightgrey;
+}
+
+li {
+  margin-left: 35px;
+  padding-bottom: 8px;
+}
+
+h3, h4, h5, h6 {
+  font-family: "century gothic";
+
+}
+
+h1, h2 {
+  font-family: "century gothic";
+  font-weight: bold;
+}
+
+button {
+  font-family: "marker felt";
+  font-weight: bold;
+}
