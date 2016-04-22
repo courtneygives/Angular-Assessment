@@ -17,3 +17,5 @@ When you enter a second value and click the button the following should happen:
 Also, remember to use the [controllerAs](https://docs.angularjs.org/api/ng/directive/ngController) syntax. 
 
 Good luck!
+
+[Clickable mock-up](https://ninjastorage.blob.core.windows.net/html/NFJ8S/index.html#4147aac7-de59-c2ea-4eec-bcf8dfa53774)
