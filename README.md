@@ -1,6 +1,6 @@
 # Angular-Assessment
 
-Today you will be building a small AngularJS that will be handling messages.
+Today you will be building a small AngularJS application that will be handling messages.
 
 Objective: Your application will have a single text input and a single button. You should be allowed to enter text into the text box, and when the button is clicked:
 * The view should expose the words 'Message is: ' followed by the value that was sent. 
@@ -14,6 +14,6 @@ When you enter a second value and click the button the following should happen:
 * The 'Previous messages are:' label should NOT be visible until there are previous messages to show.
 * The input should be cleared out
 
-Also, remember to use the (controllerAs)[https://docs.angularjs.org/api/ng/directive/ngController] syntax. 
+Also, remember to use the [controllerAs](https://docs.angularjs.org/api/ng/directive/ngController) syntax. 
 
 Good luck!
