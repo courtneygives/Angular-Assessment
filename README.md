@@ -14,4 +14,6 @@ When you enter a second value and click the button the following should happen:
 * The 'Previous messages are:' label should NOT be visible until there are previous messages to show.
 * The input should be cleared out
 
+Also, remember to use the (controllerAs)[https://docs.angularjs.org/api/ng/directive/ngController] syntax. 
+
 Good luck!
